@@ -14,6 +14,10 @@ body {
 	background-size: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	width: 100%;
 	height: 15vh;
@@ -42,6 +46,7 @@ header {
 }
 
 .content {
+	width: 100%;
 	position: absolute;
 	top: 35%;
 	left: 50%;
@@ -54,6 +59,7 @@ header {
 
 header h1 {
 	color: white;
+	text-shadow: 4px 4px #03527385;
 	margin: 0;
     padding: 0;
     font-weight: 600;
@@ -65,9 +71,9 @@ header button, header button:visited {
 	border: 1px solid white;
     background: white;
     color: var(--color);
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 7px 25px;
     border-radius: 20px;
     margin: 13px 0 0 0;
     cursor: pointer;
@@ -87,7 +93,7 @@ header button:hover, header button:active, header button:focus {
 	top: 0;
 	left: -100%;
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	background: #000000e0;
 	display: flex;
 	flex-direction: column;
@@ -103,7 +109,7 @@ header button:hover, header button:active, header button:focus {
 	flex-wrap: wrap;
 }
 
-.carrera {
+.carrera, .carrera:visited {
 	width: calc(100% / 5);
 	background: blue;
 	height: 209px;
@@ -113,14 +119,26 @@ header button:hover, header button:active, header button:focus {
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
-    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carrera.jpg);
-    background-size: cover;
     cursor: pointer;
+    background-size: cover;
 
     transition: .3s all ease;
 }
 
-.carrera:hover {
+.veterinaria {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(veterinaria.jpg);
+}
+.contador {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(contador.jpg);
+}
+.farmacia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(farmacia.jpg);
+}
+.agronomia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(agronomia.jpg);
+}
+
+.carrera:hover, .carrera:focus, .carrera:active {
 	box-shadow: 3px 4px 15px 1px rgb(16 107 146 / 57%);
 }
 
@@ -181,6 +199,12 @@ header button:hover, header button:active, header button:focus {
 }
 
 @media only screen and (max-width: 570px) {
+	header h1 {
+		line-height: 1;
+	}
+	.carreras {
+		height: auto;
+	}
 	.carrera {
 		width: 100%;
 	}
