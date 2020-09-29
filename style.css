@@ -177,9 +177,9 @@ header button:hover, header button:active, header button:focus {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 570px) {
 	.carrera {
-		width: calc(100% / 2);
+		width: 100%;
 	}
 	nav img {
 		width: 25%;
