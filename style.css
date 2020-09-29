@@ -135,7 +135,7 @@ header button:hover, header button:active, header button:focus {
 .cerrarContent {
 	position: relative;
     width: 100%;
-    padding: 28px 0px 22px;
+    padding: 0px 0px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,15 +158,17 @@ header button:hover, header button:active, header button:focus {
 }
 
 .cerrarContent p {
-    width: auto;
+	width: auto;
     text-align: center;
-    padding: 6px 23px 6px 29px;
-    color: white;
-    border-radius: 25px;
+    padding: 7px 23px 12px 32px;
+    background: white;
+    color: var(--color);
+    border-radius: 0 0 25px 25px;
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
+    box-shadow: 3px 0px 8px 4px rgb(0 0 0 / 62%);
 }
 
 @media only screen and (max-width: 900px) {
