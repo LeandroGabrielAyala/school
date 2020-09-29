@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina secundario</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav>
+		<img src="logo.png" alt="Logo uncaus">
+	</nav>
+
+	<header>
+		<div class="content">
+			<h1>Lorem ipsum, dolor sit amet.</h1>
+			<button onclick="openCarreras()">¿Te gustaría acceder a las carreras?</button>
+		</div>
+	</header>
+
+	<section id="oculto" class="carreras">
+		<div class="cerrarContent">
+			<p>- Carreras -</p>
+			<i class="far fa-times-circle" onclick="closeCarreras()"></i>
+		</div>
+		<div class="fila">
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+			<div class="carrera">
+				<p class="nombre-carrer">Ing. en Sistemas de Información</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function openCarreras()
+		{
+		    document.getElementById("oculto").style.left="0%";
+		}
+
+		function closeCarreras()
+		{
+		    document.getElementById("oculto").style.left="-100%";
+		}
+	</script>
+
+</body>
+</html>
