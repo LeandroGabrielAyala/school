@@ -112,6 +112,7 @@ header button:hover, header button:active, header button:focus {
 }
 
 .carrera, .carrera:visited {
+	position: relative;
 	width: calc(100% / 5);
 	background: blue;
 	height: 209px;
@@ -127,21 +128,129 @@ header button:hover, header button:active, header button:focus {
     transition: .3s all ease;
 }
 
-.veterinaria {
-    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(veterinaria.jpg);
-}
-.contador {
-    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(contador.jpg);
-}
-.farmacia {
-    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(farmacia.jpg);
-}
-.agronomia {
-    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(agronomia.jpg);
-}
-
 .carrera:hover, .carrera:focus, .carrera:active {
 	box-shadow: 3px 4px 15px 1px rgb(16 107 146 / 57%);
+}
+
+.carrera span {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 0 10px 0 10px;
+    padding: 2px 10px;
+    color: var(--color);
+}
+
+.carreraV, .carreraV:visited {
+	position: relative;
+	width: calc(100% / 5);
+	height: 209px;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+    background-size: cover;
+
+    transition: .3s all ease;
+}
+
+.carreraV:hover, .carreraV:focus, .carreraV:active {
+	box-shadow: 3px 4px 15px 1px rgb(146 77 16 / 57%);
+}
+
+.carreraV span {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 0 10px 0 10px;
+    padding: 2px 10px;
+    color: #ff8b00;
+}
+
+.veterinaria {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/veterinaria.jpg);
+}
+.contador {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/contador.jpg);
+}
+.contadorV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/contador.jpg);
+}
+.administracion {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/administracion.jpg);
+}
+.administracionV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/administracion.jpg);
+}
+.farmacia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/farmacia.jpg);
+}
+.agronomia {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/agronomia.jpg);
+}
+.ambiente {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/ambiente.jpg);
+}
+.ambienteV {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/ambiente.jpg);
+}
+.fisica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/fisica.jpg);
+}
+.industrial {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/industrial.jpg);
+}
+.matematica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/matematica.jpg);
+}
+.medicina {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/medicina.jpg);
+}
+.nutricion {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/nutricion.jpg);
+}
+.optica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/optica.jpg);
+}
+.quimica {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/quimica.jpg);
+}
+.sistemas {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/sistemas.jpg);
+}
+.zootecnista {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/zootecnista.jpg);
+}
+.alimento {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/alimento.jpg);
+}
+
+.historia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/historia.jpg);
+}
+.teologia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/teologia.jpg);
+}
+.abogacia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/abogacia.jpg);
+}
+.sociologia {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/sociologia.jpg);
+}
+.penitenciario {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/penitenciario.jpg);
+}
+.seguridad {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/seguridad.jpg);
+}
+.higiene {
+    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/higiene.jpg);
 }
 
 .nombre-carrer {
