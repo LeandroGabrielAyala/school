@@ -301,7 +301,7 @@ header button:hover, header button:active, header button:focus {
 }
 
 @media only screen and (max-width: 900px) {
-	.carrera {
+	.carrera, .carreraV {
 		width: calc(100% / 3);
 	}
 	nav img {
@@ -321,7 +321,7 @@ header button:hover, header button:active, header button:focus {
 	.carreras {
 		height: auto;
 	}
-	.carrera {
+	.carrera, .carreraV {
 		width: 100%;
 	}
 	nav img {
