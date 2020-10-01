@@ -69,34 +69,60 @@ header h1 {
     font-size: 2.6rem;
 }
 
-header button, header button:visited {
-	border: 1px solid white;
+.buttonContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonP {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1.5px solid var(--color);    
+    border-radius: 20px 0 0 20px;
+}
+.buttonV {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1.5px solid var(--color); 
+    border-radius: 0 20px 20px 0;
+}
+
+.buttonP, .buttonP:visited,
+.buttonV, .buttonV:visited {
     background: white;
     color: var(--color);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 7px 15px;
-    border-radius: 20px;
     margin: 13px 0 0 0;
     cursor: pointer;
     text-align: center;
-    transform: scale(1);
 
     transition: .3s all ease;
 }
 
-header button:hover, header button:active, header button:focus {
-	transform: scale(1.1);
+.buttonP:hover, .buttonP:active, .buttonP:focus,
+.buttonV:hover, .buttonV:active, .buttonV:focus {
+    color: white;
+    background: var(--color);
 	box-shadow: 0px 0px 11px 2px rgb(255 255 255 / 35%);
 }
 
-.carreras {
+#ocultoP, #ocultoV {
 	position: absolute;
 	top: 0;
 	left: -150%;
+
+}
+
+.carreras {
 	width: 100%;
 	height: auto;
-	background: #000000e0;
+    background: #000000e0;
+    padding: 0 0 25px 0;
 	display: flex;
 	flex-direction: column;
 
@@ -282,22 +308,33 @@ header button:hover, header button:active, header button:focus {
     cursor: pointer;
 }
 
-.cerrarContent i:hover, .cerrarContent i:active, .cerrarContent i:focus {
-	color: white;
+.closeV {
+    color: #ff8b00 !important;
 }
 
-.cerrarContent p {
+.cerrarContent i:hover, .cerrarContent i:active, .cerrarContent i:focus,
+.closeV:hover, .closeV:active, .closeV:focus {
+	color: white !important;
+}
+
+.cerrarContent__tituloP, .cerrarContent__tituloV {
 	width: auto;
     text-align: center;
     padding: 7px 23px 12px 32px;
     background: white;
-    color: var(--color);
     border-radius: 0 0 25px 25px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     box-shadow: 3px 0px 8px 4px rgb(0 0 0 / 62%);
+}
+
+.cerrarContent__tituloP {
+    color: var(--color);
+}
+.cerrarContent__tituloV {
+    color: #ff8b00;
 }
 
 @media only screen and (max-width: 900px) {
@@ -307,6 +344,28 @@ header button:hover, header button:active, header button:focus {
 	nav img {
 		width: 15%;
 	}
+}
+
+@media only screen and (max-width: 780px) {
+    .buttonContent {
+        flex-direction: column;
+    }
+    
+    .buttonP {
+        margin: 30px 0 0 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-radius: 5px;
+    }
+    .buttonV {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (max-width: 570px) {

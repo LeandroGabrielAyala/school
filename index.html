@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>¡UNCAus se suma a la SRTIC!</title>
+	<title>¡UNCAus se suma a "Todos a la Secundaria"!</title>
 	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
 	<link rel="stylesheet" href="style.css">
@@ -22,15 +22,18 @@
 
 	<header>
 		<div class="content">
-			<h1>¡UNCAus se suma a la SRTIC!</h1>
-			<button onclick="openCarreras()">Click aquí para acceder a una carrera</button>
+			<h1>¡UNCAus se suma a "Todos a la Secundaria"!</h1>
+			<div class="buttonContent">
+				<button class="buttonP" onclick="openCarrerasP()">Click para acceder a las carreras presenciales</button>
+				<button class="buttonV" onclick="openCarrerasV()">Click para acceder a las carreras virtuales</button>
+			</div>
 		</div>
 	</header>
 
-	<section id="oculto" class="carreras">
+	<section id="ocultoP" class="carreras">
 		<div class="cerrarContent">
-			<p>Carreras</p>
-			<i class="far fa-times-circle" onclick="closeCarreras()"></i>
+			<p class="cerrarContent__tituloP">Carreras Presenciales</p>
+			<i class="fas fa-arrow-left" onclick="closeCarrerasP()"></i>
 		</div>
 		<div class="fila">
 			<a href="https://moodlefinales.uncaus.edu.ar/course/view.php?id=1310" target="_blank" class="carrera veterinaria">
@@ -100,8 +103,16 @@
 			<a href="https://moodlefinales.uncaus.edu.ar/course/view.php?id=1307" target="_blank" class="carrera matematica">
 				<p class="nombre-carrer">Profesorado en Matemática</p>
 				<span>Modalidad presencial</span>
-			</a>
-			<!-- ACA EMPIEZA LO VIRTUAL -->
+			</a>		
+		</div>
+	</section>
+
+	<section id="ocultoV" class="carreras">
+		<div class="cerrarContent">
+			<p class="cerrarContent__tituloV">Carreras a Distancia</p>
+			<i class="fas fa-arrow-left closeV" onclick="closeCarrerasV()"></i>
+		</div>
+		<div class="fila">
 			<a href="https://moodlefinales.uncaus.edu.ar/course/view.php?id=1316" target="_blank" class="carreraV abogacia">
 				<p class="nombre-carrer">Abogacía</p>
 				<span>Modalidad distancia</span>
@@ -154,14 +165,22 @@
 	</section>
 
 	<script>
-		function openCarreras()
+		function openCarrerasP()
 		{
-		    document.getElementById("oculto").style.left="0%";
+		    document.getElementById("ocultoP").style.left="0%";
+		}		
+		function openCarrerasV()
+		{
+		    document.getElementById("ocultoV").style.left="0%";
 		}
 
-		function closeCarreras()
+		function closeCarrerasP()
 		{
-		    document.getElementById("oculto").style.left="-150%";
+		    document.getElementById("ocultoP").style.left="-150%";
+		}
+		function closeCarrerasV()
+		{
+		    document.getElementById("ocultoV").style.left="-150%";
 		}
 	</script>
 
