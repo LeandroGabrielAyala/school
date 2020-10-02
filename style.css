@@ -386,5 +386,15 @@ header h1 {
 	nav img {
 		width: 25%;
 	}
+    .cerrarContent {
+        padding: 0 0 15px 0;
+        flex-direction: column;
+    }
+    .cerrarContent i {
+        position: inherit;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
 
 }
