@@ -262,6 +262,9 @@ header h1 {
 .alimento {
     background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/alimento.jpg);
 }
+.penitenciario {
+    background-image: linear-gradient(to bottom right, #189bd57d, #189bd5), url(carreras/penitenciario.jpg);
+}
 
 .historia {
     background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/historia.jpg);
@@ -274,9 +277,6 @@ header h1 {
 }
 .sociologia {
     background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/sociologia.jpg);
-}
-.penitenciario {
-    background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/penitenciario.jpg);
 }
 .seguridad {
     background-image: linear-gradient(to bottom right, #d55e1859, #d58118d9), url(carreras/seguridad.jpg);
